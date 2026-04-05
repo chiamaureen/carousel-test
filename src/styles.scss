@@ -7,3 +7,15 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+/* 放在 styles.scss */
+.p-carousel .p-carousel-content .p-carousel-items-container {
+    /* 強制允許垂直滑動，並停用瀏覽器對此區域的水平手勢預測 */
+    touch-action: pan-y !important;
+    -webkit-user-drag: none;
+}
+
+/* 針對內容物，確保它不會攔截觸控 */
+.p-carousel-item {
+    touch-action: pan-y !important;
+}
