@@ -5,9 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "deploy": "ng build --base-href /carousel-test/ && ngh --dir dist/y/browser"
+    "deploy": "ng build --base-href /carousel-test/ && cp dist/y/browser/index.html dist/y/browser/404.html && ngh --dir dist/y/browser"
   },
   "private": true,
   "dependencies": {
