@@ -1,3 +1,13 @@
 .c-img {
     width: 150%;
 }
+
+:host ::ng-deep .p-carousel {
+    /* pan-y 表示允許垂直方向的平移（捲動） */
+    /* pinch-zoom 表示允許縮放 */
+    touch-action: pan-y pinch-zoom !important;
+}
+
+:host ::ng-deep .p-carousel-content {
+    touch-action: pan-y pinch-zoom !important;
+}
