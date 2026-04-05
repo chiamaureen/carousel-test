@@ -19,3 +19,7 @@ body {
 .p-carousel-item {
     touch-action: pan-y !important;
 }
+
+::ng-deep .p-carousel-content {
+    pointer-events: none !important;
+}
